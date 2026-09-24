@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Deepesh Singh — Portfolio</title>
+<meta name="description" content="Deepesh Singh — Computer Science Dual Degree student at IIT Kharagpur. Machine learning, systems, and quantitative development." />
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="noise-overlay" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav-wrap">
+  <nav class="nav glass" id="mainNav">
+    <a href="#top" class="nav-mark">DS</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#coursework">Coursework</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#internships">Internships</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#coding">Coding&nbsp;Profiles</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO / ABOUT ============ -->
+  <section class="hero" id="about">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="section-inner hero-inner">
+      <div class="hero-photo-wrap">
+        <div class="hero-photo">
+          <img src="image/1.png" alt="Deepesh Singh" onerror="this.parentElement.classList.add('img-fallback')" />
+          <span class="fallback-initials">DS</span>
+        </div>
+        <div class="hero-ring" aria-hidden="true"></div>
+      </div>
+
+      <h1 class="hero-name">Deepesh Singh</h1>
+      <p class="hero-role">Computer Science Dual Degree Student · IIT Kharagpur</p>
+
+      <p class="hero-bio">
+        I am a software engineering student at IIT Kharagpur, where I have completed both
+        my B.Tech. and M.Tech. I am proficient in machine learning, artificial intelligence,
+        large language models (LLMs), data structures and algorithms, system design,
+        competitive programming, and problem-solving.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <span class="hero-meta-num">AIR&nbsp;16</span>
+          <span class="hero-meta-label">JEE Advanced</span>
+        </div>
+        <div class="hero-meta-divider" aria-hidden="true"></div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-num">1654</span>
+          <span class="hero-meta-label">Codeforces Expert</span>
+        </div>
+        <div class="hero-meta-divider" aria-hidden="true"></div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-num">37</span>
+          <span class="hero-meta-label">Projects Built</span>
+        </div>
+      </div>
+    </div>
+    <a href="#coursework" class="scroll-cue" aria-label="Scroll to next section">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ============ COURSEWORK ============ -->
+  <section class="section" id="coursework">
+    <div class="section-inner">
+      <h2 class="section-title">Coursework</h2>
+      <p class="section-lede">Core subjects across my B.Tech. and M.Tech. curriculum at IIT Kharagpur.</p>
+      <ul class="pill-grid" id="courseworkList"></ul>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section" id="skills">
+    <div class="section-inner">
+      <h2 class="section-title">Skills</h2>
+      <p class="section-lede">Languages, frameworks, and tools I build with.</p>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ INTERNSHIPS ============ -->
+  <section class="section" id="internships">
+    <div class="section-inner">
+      <h2 class="section-title">Internships</h2>
+      <p class="section-lede">Applied engineering work in industry, outside the classroom.</p>
+      <div class="internship-list" id="internshipList"></div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section section-wide" id="projects">
+    <div class="section-inner section-inner-wide">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-lede">Thirty-seven builds spanning data systems, full-stack development, and quantitative engineering.</p>
+
+      <div class="filter-bar" id="filterBar" role="tablist" aria-label="Filter projects by category">
+        <button class="filter-btn is-active" data-filter="All" role="tab" aria-selected="true">All <span class="filter-count" id="countAll"></span></button>
+        <button class="filter-btn" data-filter="Data" role="tab" aria-selected="false">Data <span class="filter-count" id="countData"></span></button>
+        <button class="filter-btn" data-filter="Development" role="tab" aria-selected="false">Development <span class="filter-count" id="countDevelopment"></span></button>
+        <button class="filter-btn" data-filter="Quant" role="tab" aria-selected="false">Quant <span class="filter-count" id="countQuant"></span></button>
+      </div>
+
+      <div class="project-grid" id="projectGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ CODING PROFILES ============ -->
+  <section class="section" id="coding">
+    <div class="section-inner">
+      <h2 class="section-title">Coding Profiles</h2>
+      <p class="section-lede">Where I practice, compete, and ship in the open.</p>
+      <div class="profile-cards" id="codingProfiles"></div>
+    </div>
+  </section>
+
+  <!-- ============ ACHIEVEMENTS ============ -->
+  <section class="section" id="achievements">
+    <div class="section-inner">
+      <h2 class="section-title">Achievements &amp; Certifications</h2>
+      <p class="section-lede">Results from competitions, coursework, and independent challenges.</p>
+      <ul class="achievement-list" id="achievementList"></ul>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="section-inner">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-lede">Reach out directly, or find me on any of these platforms.</p>
+      <div class="contact-grid" id="contactGrid"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="section-inner footer-inner">
+    <span>Deepesh Singh</span>
+    <span class="footer-dot">·</span>
+    <span>Built with HTML, CSS &amp; JavaScript</span>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
